@@ -37,9 +37,11 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="#accueil" className="flex items-center space-x-3">
-              <div className="w-12 h-12 senegal-gradient rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">AF</span>
-              </div>
+              <img
+                src="/images/5a24bd0b-032c-40db-8f9f-331c4216641c.jpg"
+                alt="Abdoulaye Fall"
+                className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-md"
+              />
               <div className="hidden sm:block">
                 <h1 className={`font-bold text-xl ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
                   Abdoulaye Fall
