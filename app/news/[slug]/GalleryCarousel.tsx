@@ -2,7 +2,7 @@
 import React, { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-export default function GalleryCarousel({ images }: { images: string[] }) {
+export default function GalleryCarousel({ images, onImageClick }: { images: string[]; onImageClick?: (src: string) => void }) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [scrollIndex, setScrollIndex] = useState(0);
   const scrollTo = (dir: "left" | "right") => {
@@ -43,6 +43,7 @@ export default function GalleryCarousel({ images }: { images: string[] }) {
               alt={`Photo ${i + 1}`}
               className="w-full h-full object-cover rounded-xl shadow-lg border-2 border-white group-hover:scale-105 transition-transform duration-300 cursor-pointer animate-fadein"
               loading="lazy"
+              onClick={onImageClick ? () => onImageClick(src) : undefined}
             />
           </div>
         ))}

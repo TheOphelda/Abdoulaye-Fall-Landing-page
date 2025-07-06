@@ -2,13 +2,7 @@
 
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Send, Download } from 'lucide-react';
-
-// Icône TikTok SVG personnalisée
-const TikTokIcon = (props: React.SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="currentColor" width={24} height={24} {...props}>
-    <path d="M12.67 2H16.08V8.29C16.08 8.29 18.06 8.32 18.09 8.32C18.09 8.32 18.09 10.08 18.09 10.08C18.09 10.08 16.09 10.07 16.08 10.07V20.24C16.08 21.2 15.28 22 14.32 22H9.68C8.72 22 7.92 21.2 7.92 20.24V10.07C7.92 10.07 5.92 10.08 5.92 10.08C5.92 10.08 5.92 8.32 5.92 8.32C5.92 8.32 7.9 8.29 7.92 8.29V2H11.33V8.29H12.67V2Z" />
-  </svg>
-);
+import { SiTiktok } from 'react-icons/si';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -44,7 +38,7 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: <Facebook size={24} />, href: 'https://www.facebook.com/share/1Agdhw8otE/?mibextid=wwXIfr', label: 'Facebook' },
-    { icon: <TikTokIcon width={24} height={24} />, href: 'https://www.tiktok.com/@abdoulayefall_officiel?_t=ZM-8xij4zWB165&_r=1', label: 'Tiktok' },
+    { icon: <SiTiktok size={24} />, href: 'https://www.tiktok.com/@abdoulayefall_officiel?_t=ZM-8xij4zWB165&_r=1', label: 'Tiktok' },
     { icon: <Instagram size={24} />, href: 'https://www.instagram.com/abdoulayefall_officiel?igsh=MWVlOGRtanphZnhzMg==', label: 'Instagram' },
     { icon: <Linkedin size={24} />, href: 'https://www.linkedin.com/in/abdoulaye-fall-75a709372?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', label: 'LinkedIn' }
   ];

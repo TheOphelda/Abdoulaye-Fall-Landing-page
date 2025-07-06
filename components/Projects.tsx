@@ -44,7 +44,7 @@ const Projects = () => {
             Partagez vos Idées
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Partagez vos idées, vos projets ou vos initiatives pour faire avancer le football sénégalais. Chaque contribution compte pour imaginer, ensemble, un avenir ambitieux et solidaire pour notre sport.
           </p>
         </div>
 
@@ -59,8 +59,7 @@ const Projects = () => {
                 <h3 className="text-2xl font-bold text-gray-900">Votre Vision Compte</h3>
               </div>
               <p className="text-gray-700 leading-relaxed mb-6">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.
+                Votre avis est essentiel pour bâtir un football sénégalais plus fort et inclusif. Que vous soyez joueur, entraîneur, dirigeant de club ou passionné, vos idées et retours nous aident à identifier les besoins réels du terrain et à construire ensemble des solutions adaptées à chaque acteur du football national.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">
@@ -86,8 +85,7 @@ const Projects = () => {
             <div className="bg-gradient-to-r from-green-600 to-blue-600 rounded-3xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">Construisons Ensemble</h3>
               <p className="text-lg leading-relaxed">
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                Ensemble, nous avons le pouvoir de transformer le football sénégalais. En unissant nos forces, nos idées et nos énergies, nous pouvons bâtir des projets innovants qui profiteront à toute la communauté, du terrain aux tribunes.
               </p>
               <div className="mt-6 flex items-center justify-center">
                 <div className="w-32 h-32 relative">

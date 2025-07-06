@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
@@ -7,6 +6,8 @@ import dynamic from "next/dynamic";
 const GalleryCarousel = dynamic(() => import("./GalleryCarousel"), { ssr: false });
 const MarkdownViewer = dynamic(() => import("./MarkdownViewer"), { ssr: false });
 const CoverImage = dynamic(() => import("./CoverImage"), { ssr: false });
+import ImageModal from "@/components/ImageModal";
+import NewsEventClient from "./NewsEventClient";
 
 const newsData = [
   {
@@ -33,7 +34,7 @@ export async function generateStaticParams() {
   return newsData.map((item) => ({ slug: item.slug }));
 }
 
-export default async function NewsEventPage({ params }: { params: { slug: string } }) {
+export default function NewsEventPage({ params }: { params: { slug: string } }) {
   const event = newsData.find((n) => n.slug === params.slug);
   if (!event) return notFound();
 
@@ -43,59 +44,11 @@ export default async function NewsEventPage({ params }: { params: { slug: string
   try {
     images = fs
       .readdirSync(imagesDir)
-      .filter((file) => file.endsWith(".jpg") || file.endsWith(".jpeg") || file.endsWith(".png"))
+      .filter((file) => [".jpg", ".jpeg", ".png"].some(ext => file.toLowerCase().endsWith(ext)))
       .map((file) => `${event.imagesFolder}/${file}`);
   } catch {
     images = [];
   }
 
-  return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Couverture */}
-      <div className="relative w-full h-64 md:h-96 mb-8 flex items-center justify-center overflow-hidden">
-        <CoverImage
-          src={event.cover || images[0] || "/default-cover.jpg"}
-          alt={`Couverture de l'événement: ${event.title}`}
-        />
-        {/* Overlay pour le texte */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-        <div className="relative z-10 text-center px-4">
-          <h1 className="text-3xl md:text-5xl font-extrabold text-white drop-shadow-lg mb-2 animate-fadein">
-            {event.title}
-          </h1>
-          {event.subtitle && (
-            <p className="text-lg md:text-xl text-white/90 drop-shadow-md animate-fadein-delay">
-              {event.subtitle}
-            </p>
-          )}
-        </div>
-        <Link
-          href="/"
-          className="absolute top-4 left-4 bg-white/80 hover:bg-white text-green-700 px-4 py-2 rounded-full shadow font-semibold text-sm transition-all duration-300 ease-in-out hover:scale-105 flex items-center gap-1"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-          </svg>
-          Retour aux actualités
-        </Link>
-      </div>
-
-      {/* Contenu */}
-      <section className="max-w-3xl mx-auto px-4">
-        <div className="bg-white/90 rounded-xl shadow-lg p-6 md:p-10 mb-10 animate-fadein border border-gray-100">
-          <MarkdownViewer content={event.content} />
-        </div>
-
-        {/* Galerie carrousel */}
-        {images.length > 0 && (
-          <div className="mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900 text-center">
-              Moments Forts en Images
-            </h2>
-            <GalleryCarousel images={images} />
-          </div>
-        )}
-      </section>
-    </main>
-  );
+  return <NewsEventClient event={event} images={images} />;
 }

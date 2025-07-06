@@ -33,17 +33,17 @@ const Achievements = () => {
   const testimonials = [
     {
       quote: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-      author: "Mamadou Diallo",
+      author: "Lorem Ipsum",
       title: "Ancien international sénégalais"
     },
     {
       quote: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-      author: "Fatou Seck",
+      author: "Dolor Sit Amet",
       title: "Présidente Ligue Féminine Dakar"
     },
     {
       quote: "Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
-      author: "Ibrahima Sarr",
+      author: "Consectetur Adipiscing",
       title: "Entraîneur régional"
     }
   ];
