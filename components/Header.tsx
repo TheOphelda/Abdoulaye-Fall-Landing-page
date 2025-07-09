@@ -47,7 +47,9 @@ const Header = () => {
                   Abdoulaye Fall
                 </h1>
                 <p className={`text-sm ${isScrolled ? 'text-gray-600' : 'text-gray-200'}`}>
-                Candidat à la Présidence de la Fédération Sénégalaise de Football
+                Candidat à la Présidence de la 
+                <br />
+                Fédération Sénégalaise de Football
                 </p>
               </div>
             </Link>
