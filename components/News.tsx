@@ -6,6 +6,15 @@ import { Calendar, Clock, ExternalLink } from 'lucide-react';
 const News = () => {
   const articles = [
     {
+      title: "Présent lors du match de gala pour la remise des trophées Ligue 1 et Ligue 2 (LSFP) 2024/2025",
+      excerpt: "Retour en images sur la cérémonie de remise des trophées de la Ligue 1 et Ligue 2, saison 2024/2025, lors du match de gala du 8 juillet 2025.",
+      date: "08 Juillet 2025",
+      readTime: "Galerie",
+      image: "/images/8july/IMG-20250709-WA0015.jpg",
+      category: "Evénement",
+      slug: "gala-trophees-ligue1-ligue2-8-juillet-2025"
+    },
+    {
       title: "Ce jeudi 03 juillet 2025, j’ai eu le privilège d’être le parrain de la grande finale senior de la Ligue Régionale de Football de Saint-Louis, organisée à Ross Béthio",
       excerpt: "Retour sur la grande finale senior à Saint-Louis, une célébration du football local et de l’engagement pour la jeunesse. Cliquez sur lire la suite pour voir toutes les photos et le récit.",
       date: "03 Juillet 2025",
@@ -22,23 +31,7 @@ const News = () => {
       image: "/images/2july/389e83ca-5941-4102-9be8-476d5c26c12b.jpg",
       category: "Evénement",
       slug: "finales-juniors-seniors-2-juillet-2025"
-    },
-    /*{
-      title: "Consectetur Adipiscing Elit",
-      excerpt: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
-      date: "12 Janvier 2025",
-      readTime: "3 min",
-      image: "/images/6273a2cb-82d8-44b9-abf5-f0cf3d906137.jpg",
-      category: "Terrain"
-    },
-    {
-      title: "Quis Autem Vel Eum",
-      excerpt: "Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
-      date: "8 Janvier 2025",
-      readTime: "4 min",
-      image: "/images/c8b25cbe-3626-4ebc-a6b9-06dd14278743.jpg",
-      category: "International"
-    }*/
+    }
   ];
 
   const upcomingEvents = [
@@ -47,12 +40,12 @@ const News = () => {
     { title: "Parrain de la finale de la ligue régionale de football de KEDOUGOU", date: "29 JUIN 2025" },
     { title: "Parrain de la finale de la ligue régionale de football de LOUGA", date: "02 JUILLET 2025" },
     { title: "Parrain de la finale de la ligue régionale de football de SAINT LOUIS", date: "03 JUILLET 2025" },
-    { title: "Parrain de la finale de la ligue régionale de football de DAKAR", date: "04 JUILLET 2025" },
-    { title: "Parrain de la finale de la ligue régionale de football de MATAM", date: "06 JUILLET 2025" },
-    { title: "Parrain de la finale de la ligue régionale de football de KOLDA", date: "12 JUILLET 2025" },
-    { title: "Parrain de la finale de la ligue régionale de football de THIES", date: "19 JUILLET 2025" },
-    { title: "Parrain de la finale de la ligue régionale de football de KAOLACK", date: "25 JUILLET 2025" },
-    { title: "Parrain de la finale de la ligue régionale de football de KAFFRINE", date: "26 JUILLET 2025" },
+    { title: "Parrain de la finale de la ligue régionale de football de DAKAR", date: "10 JUILLET 2025" },
+    { title: "Parrain de la finale de la ligue régionale de football de MATAM", date: "A déterminer" },
+    { title: "Parrain de la finale de la ligue régionale de football de KOLDA", date: "15 JUILLET 2025" },
+    { title: "Parrain de la finale de la ligue régionale de football de THIES", date: "A déterminer" },
+    { title: "Parrain de la finale de la ligue régionale de football de KAOLACK", date: "26 JUILLET 2025" },
+    { title: "Parrain de la finale de la ligue régionale de football de KAFFRINE", date: "25 JUILLET 2025" },
     { title: "Parrain de la finale de la ligue régionale de football de DIOURBEL", date: "27 JUILLET 2025" }
   ];
 

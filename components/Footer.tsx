@@ -44,7 +44,7 @@ const Footer = () => {
               />
               <div>
                 <h3 className="text-xl font-bold">Abdoulaye Fall</h3>
-                <p className="text-gray-400">Candidat Président FSF</p>
+                <p className="text-gray-400">Candidat à la Présidence de la Fédération Sénégalaise de Football</p>
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">

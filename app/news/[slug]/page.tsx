@@ -11,6 +11,14 @@ import NewsEventClient from "./NewsEventClient";
 
 const newsData = [
   {
+    slug: "gala-trophees-ligue1-ligue2-8-juillet-2025",
+    title: "Match de gala et remise des trophées Ligue 1 & Ligue 2 (LSFP) 2024/2025",
+    subtitle: "Présence lors de la cérémonie du 8 juillet 2025",
+    content: "Le 8 juillet 2025, j’ai eu l’honneur d’assister au match de gala organisé à l’occasion de la remise des trophées de la Ligue 1 et Ligue 2 (LSFP) pour la saison 2024/2025. Un moment fort de célébration du football sénégalais, de ses champions et de tous les acteurs qui contribuent à son rayonnement. Découvrez en images les temps forts de cette cérémonie exceptionnelle.",
+    imagesFolder: "/images/8july",
+    cover: "/images/8july/IMG-20250709-WA0015.jpg",
+  },
+  {
     slug: "finales-juniors-seniors-2-juillet-2025",
     title:
       "Un Honneur Mémorable : Parrain des Finales de Football Junior & Senior", // Titre amélioré
