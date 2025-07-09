@@ -5,29 +5,29 @@ import { Trophy, Users, Building, Globe } from 'lucide-react';
 const Achievements = () => {
   const achievements = [
     {
-      icon: <Building className="w-12 h-12" />,
-      title: 'Modernisation des Infrastructures',
-      description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
-      stats: '8 projets réalisés'
+      icon: <Users className="w-12 h-12" />,
+      title: "Engagement précoce (1982)",
+      description: "Président du comité culturel de l’ASC Penth à 16 ans, joueur cadet dans deux clubs locaux.",
+      stats: "30+ ans d’engagement"
     },
     {
-      icon: <Users className="w-12 h-12" />,
-      title: 'Développement des Jeunes',
-      description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.',
-      stats: '2000+ jeunes formés'
+      icon: <Building className="w-12 h-12" />,
+      title: "Création et gestion de clubs",
+      description: "Co-fondateur de l’ASC Diwane, dirigeant à l’ASC Santos de Louga, président de l’ASC Réveil de Bambey (10 ans, nombreux trophées).",
+      stats: "3 clubs structurés"
     },
     {
       icon: <Trophy className="w-12 h-12" />,
-      title: 'Football Féminin',
-      description: 'Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.',
-      stats: '12 ligues créées'
+      title: "Redressement de l’ASC Bambey",
+      description: "Assainissement des finances et accession à la division régionale (2010-2011).",
+      stats: "Club sauvé & promu"
     },
     {
       icon: <Globe className="w-12 h-12" />,
-      title: 'Rayonnement International',
-      description: 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.',
-      stats: '15 partenariats'
-    }
+      title: "Présidence Ligue Régionale",
+      description: "Subventions, équipements et financements pour les clubs, montée en divisions supérieures (2017-2025).",
+      stats: "8 ans de présidence"
+    },
   ];
 
   const testimonials = [
@@ -78,23 +78,22 @@ const Achievements = () => {
         <div className="bg-gradient-to-r from-green-600 to-blue-600 rounded-3xl p-8 md:p-12 text-white mb-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h3 className="text-3xl font-bold mb-6">Projet Phare : Académie Jeunes Talents</h3>
+              <h3 className="text-3xl font-bold mb-6">Projet Phare : Baol Académie</h3>
               <p className="text-lg mb-6 leading-relaxed">
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                Fondée sous l’impulsion de Monsieur Fall, la Baol Académie incarne l’ambition de former la future élite du football sénégalais. Cette académie offre aux jeunes talents un encadrement moderne, des infrastructures de qualité et une ouverture sur la scène internationale. Dès mars 2023, elle a participé à un tournoi international U15 à Oulmès (Maroc), affirmant ainsi son ancrage dans le football de jeunes à l’échelle continentale.
               </p>
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
-                  <div className="text-3xl font-bold">14</div>
-                  <div className="text-sm opacity-90">Régions couvertes</div>
+                  <div className="text-3xl font-bold">2023</div>
+                  <div className="text-sm opacity-90">1er tournoi international</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold">2000+</div>
-                  <div className="text-sm opacity-90">Jeunes formés</div>
+                  <div className="text-3xl font-bold">100+</div>
+                  <div className="text-sm opacity-90">Jeunes accompagnés</div>
                 </div>
                 <div>
-                  <div className="text-3xl font-bold">50+</div>
-                  <div className="text-sm opacity-90">Entraîneurs certifiés</div>
+                  <div className="text-3xl font-bold">15+</div>
+                  <div className="text-sm opacity-90">Entraîneurs impliqués</div>
                 </div>
               </div>
             </div>

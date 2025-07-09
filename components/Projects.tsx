@@ -119,27 +119,34 @@ const Projects = () => {
                 </li>
               </ul>
             </div>
-            {/* Projets à venir */}
+            {/* Projets & Ambitions */}
             <div>
-              <h3 className="text-base uppercase tracking-widest font-bold text-orange-700 mb-6 letter-spacing-wide">Projets à venir</h3>
-              <ul className="space-y-6">
-                <li className="bg-white rounded-3xl shadow-lg p-7 transition-transform hover:-translate-y-1 hover:shadow-2xl border border-orange-100">
-                  <h4 className="text-lg font-semibold text-orange-800 mb-2">Rénovation des enceintes sportives régionales & siège de la Ligue</h4>
-                  <ul className="text-gray-700 text-sm space-y-1 pl-3 list-disc">
-                    <li><span className="font-semibold">Impact :</span> Modernisation des infrastructures, meilleure accessibilité pour tous.</li>
-                    <li><span className="font-semibold">Innovation :</span> Intégration de solutions éco-responsables et connectées.</li>
-                    <li><span className="font-semibold">Jeunesse & Sport :</span> Plus d’opportunités pour la jeunesse sportive locale.</li>
-                  </ul>
-                </li>
-                <li className="bg-white rounded-3xl shadow-lg p-7 transition-transform hover:-translate-y-1 hover:shadow-2xl border border-orange-100">
-                  <h4 className="text-lg font-semibold text-orange-800 mb-2">Structuration d’un club de dimension internationale</h4>
-                  <ul className="text-gray-700 text-sm space-y-1 pl-3 list-disc">
-                    <li><span className="font-semibold">Impact :</span> Ambition de hisser un club local au plus haut niveau africain.</li>
-                    <li><span className="font-semibold">Innovation :</span> Stratégie de développement et de gestion inspirée des grands clubs internationaux.</li>
-                    <li><span className="font-semibold">Jeunesse & Sport :</span> Tremplin pour les jeunes talents sénégalais vers l’élite.</li>
-                  </ul>
-                </li>
-              </ul>
+              <h3 className="text-base uppercase tracking-widest font-bold text-orange-700 mb-6 letter-spacing-wide">Projets & Ambitions</h3>
+              <div className="bg-white rounded-3xl shadow-lg p-7 border border-orange-100 mb-6">
+                <p className="text-gray-700 mb-4">
+                  Homme de projets, Monsieur Fall ambitionne de porter le football de sa région et du Sénégal vers un niveau d’excellence durable.
+                </p>
+                <p className="text-gray-700 mb-4">
+                  Ses nouvelles priorités en tant que président de la Ligue de Football de Diourbel s'articulent autour de trois axes majeurs :
+                </p>
+                <ul className="text-gray-700 text-sm space-y-2 pl-5 list-disc mb-4">
+                  <li>
+                    <span className="font-semibold">La rénovation des infrastructures sportives régionales</span> pour offrir aux jeunes talents des enceintes modernes et sécurisées.
+                  </li>
+                  <li>
+                    <span className="font-semibold">La construction du siège officiel de la Ligue</span>, pour doter l'institution d'une base administrative solide.
+                  </li>
+                  <li>
+                    <span className="font-semibold">La création d’une académie d’excellence : Baol Académie</span>, destinée à former la future élite du football sénégalais. Cette académie a d’ailleurs participé dès mars 2023 à un tournoi international U15 à Oulmès, au Maroc, illustrant son ancrage dans le football international de jeunes.
+                  </li>
+                </ul>
+                <p className="text-gray-700 mb-4">
+                  Monsieur Fall aspire à la structuration d’un club de dimension internationale, capable de rivaliser sur les scènes continentale et mondiale. Sa solide expérience de gestionnaire et ses qualités de stratège lui permettent de mener à bien des projets ambitieux, tout en conservant un attachement profond à son terroir et à la jeunesse sénégalaise.
+                </p>
+                <p className="text-gray-700">
+                  Parallèlement à son engagement sportif, Monsieur Abdoulaye Fall poursuit une brillante carrière dans l'administration publique sénégalaise, où il occupe depuis juin 2020 les fonctions de <span className="font-semibold">Trésorier Général de l'État / Agent Comptable du Trésor</span>. Il est également <span className="font-semibold">Chevalier de l’Ordre National du Lion</span> et <span className="font-semibold">Médaillé d’Honneur de la Gendarmerie Nationale du Sénégal</span>.
+                </p>
+              </div>
             </div>
           </div>
         </div>
