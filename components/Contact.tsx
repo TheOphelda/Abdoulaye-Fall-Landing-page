@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Send, Download } from 'lucide-react';
-import { SiTiktok } from 'react-icons/si';
+import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Send, Download, Users, Lightbulb, Target } from 'lucide-react';
+import { SiTiktok, SiYoutube } from 'react-icons/si';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -40,7 +40,8 @@ const Contact = () => {
     { icon: <Facebook size={24} />, href: 'https://www.facebook.com/share/1Agdhw8otE/?mibextid=wwXIfr', label: 'Facebook' },
     { icon: <SiTiktok size={24} />, href: 'https://www.tiktok.com/@abdoulayefall_officiel?_t=ZM-8xij4zWB165&_r=1', label: 'Tiktok' },
     { icon: <Instagram size={24} />, href: 'https://www.instagram.com/abdoulayefall_officiel?igsh=MWVlOGRtanphZnhzMg==', label: 'Instagram' },
-    { icon: <Linkedin size={24} />, href: 'https://www.linkedin.com/in/abdoulaye-fall-75a709372?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', label: 'LinkedIn' }
+    { icon: <Linkedin size={24} />, href: 'https://www.linkedin.com/in/abdoulaye-fall-75a709372?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', label: 'LinkedIn' },
+    { icon: <SiYoutube size={24} />, href: 'https://www.youtube.com/@Abdoulayefallofficiel', label: 'YouTube' }
   ];
 
   return (
@@ -58,42 +59,15 @@ const Contact = () => {
         <div className="grid lg:grid-cols-3 gap-12">
           {/* Contact Info */}
           <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-bold mb-6">Informations de Contact</h3>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
-                    <Mail size={20} />
+          <div>
+          <h4 className="text-xl font-bold mb-4">KÀN MOOY ABDOULAYE FALL ?</h4>
+                  <div className="text-gray-300">L’homme de terrain. L’homme de solutions.
+Découvrez son parcours, ses réalisations et sa vision pour un football sénégalais plus juste, structuré et performant.
+📲 Abonnez-vous à ses pages officielles pour ne rien rater :
+</div>
                   </div>
-                  <div>
-                    <div className="font-medium">E-mail officiel</div>
-                    <div className="text-gray-300">contact@abdoulayefall.sn</div>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
-                    <Phone size={20} />
-                  </div>
-                  <div>
-                    <div className="font-medium">Téléphone</div>
-                    <div className="text-gray-300">+221 XX XXX XX XX</div>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
-                    <MapPin size={20} />
-                  </div>
-                  <div>
-                    <div className="font-medium">Adresse</div>
-                    <div className="text-gray-300">Dakar, Sénégal</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Social Media */}
             <div>
-              <h4 className="text-xl font-bold mb-4">Suivez-nous</h4>
               <div className="flex space-x-4">
                 {socialLinks.map((social, index) => (
                   <a
@@ -109,7 +83,7 @@ const Contact = () => {
             </div>
 
             {/* Press Kit */}
-            <div className="bg-gray-800 rounded-2xl p-6">
+            {/*<div className="bg-gray-800 rounded-2xl p-6">
               <h4 className="text-xl font-bold mb-4">Espace Presse</h4>
               <p className="text-gray-300 mb-4">
                 Téléchargez notre kit média complet avec communiqués, photos officielles et informations biographiques.
@@ -118,7 +92,40 @@ const Contact = () => {
                 <Download size={20} className="mr-2" />
                 Télécharger le Kit Média
               </button>
+            </div>*/}
+            <div className="space-y-12">
+            <div className="bg-white rounded-3xl p-8 shadow-xl">
+              <div className="flex items-center mb-6">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                  <Lightbulb className="w-6 h-6 text-green-600" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900">Votre Vision Compte</h3>
+              </div>
+              {/*<p className="text-gray-700 leading-relaxed mb-6">
+                Votre avis compte pour bâtir un football sénégalais plus fort et inclusif.
+              </p>*/}
+              <div className="space-y-7">
+                <div className="flex items-center">
+                  <Users className="w-5 h-5 text-green-600 mr-3" />
+                  <span className="text-gray-700">Clubs et associations sportives</span>
+                </div>
+                <div className="flex items-center">
+                  <Target className="w-5 h-5 text-green-600 mr-3" />
+                  <span className="text-gray-700">Entraîneurs et staff technique</span>
+                </div>
+                <div className="flex items-center">
+                  <Users className="w-5 h-5 text-green-600 mr-3" />
+                  <span className="text-gray-700">Joueurs et anciens internationaux</span>
+                </div>
+                <div className="flex items-center">
+                  <Target className="w-5 h-5 text-green-600 mr-3" />
+                  <span className="text-gray-700">Supporters et passionnés</span>
+                </div>
+              </div>
             </div>
+
+            {/* Collaboration Visual */}
+          </div>
           </div>
 
           {/* Contact Form */}
@@ -243,7 +250,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
         {/* Bio for Press */}
         <div className="mt-16 bg-gray-800 rounded-3xl p-8">
           <h3 className="text-2xl font-bold mb-6">Biographie Courte - Espace Presse</h3>

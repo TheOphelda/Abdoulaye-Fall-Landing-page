@@ -19,17 +19,17 @@ const Media = () => {
     },
     {
       src: '/images/6273a2cb-82d8-44b9-abf5-f0cf3d906137.jpg',
-      alt: 'Rencontre avec les acteurs du football',
+      alt: 'Abdoulaye Fall',
       category: 'Rencontres'
     },
     {
       src: '/images/a1cd0dcb-95a1-4151-a6ec-1e7d23198480.jpg',
-      alt: 'Conférence de presse',
+      alt: 'Abdoulaye Fall',
       category: 'Événements'
     },
     {
       src: '/images/c8b25cbe-3626-4ebc-a6b9-06dd14278743.jpg',
-      alt: 'Visite terrain',
+      alt: 'Abdoulaye Fall',
       category: 'Terrain'
     }
   ];

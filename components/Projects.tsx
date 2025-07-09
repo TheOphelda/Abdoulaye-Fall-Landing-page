@@ -41,178 +41,111 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Partagez vos Idées
+            Projets : Vision & Réalisations
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Partagez vos idées, vos projets ou vos initiatives pour faire avancer le football sénégalais. Chaque contribution compte pour imaginer, ensemble, un avenir ambitieux et solidaire pour notre sport.
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8 text-center">
+            Découvrez des projets concrets, portés par l’innovation, l’impact et la jeunesse – pour un avenir ambitieux du football sénégalais.
           </p>
+        </div>
+
+        {/* Rubrique Projets */}
+        <div className="mb-20 font-sans">
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Projets Passés */}
+            <div>
+              <h3 className="text-base uppercase tracking-widest font-bold text-green-700 mb-6 letter-spacing-wide">Projets passés</h3>
+              <ul className="space-y-6">
+                <li className="bg-white rounded-3xl shadow-lg p-7 transition-transform hover:-translate-y-1 hover:shadow-2xl border border-green-100">
+                  <h4 className="text-lg font-semibold text-green-800 mb-2">Présidence de l’ASC Penth de Bambey (1982)</h4>
+                  <ul className="text-gray-700 text-sm space-y-1 pl-3 list-disc">
+                    <li><span className="font-semibold">Impact :</span> Premier engagement associatif, dynamisation de la vie culturelle et sportive locale dès l’adolescence.</li>
+                    <li><span className="font-semibold">Innovation :</span> Double rôle de dirigeant et joueur, favorisant la cohésion intergénérationnelle.</li>
+                    <li><span className="font-semibold">Jeunesse & Sport :</span> Promotion du football cadet dans deux clubs locaux.</li>
+                  </ul>
+                </li>
+                <li className="bg-white rounded-3xl shadow-lg p-7 transition-transform hover:-translate-y-1 hover:shadow-2xl border border-green-100">
+                  <h4 className="text-lg font-semibold text-green-800 mb-2">Genèse de l’ASC Diwane & direction à l’ASC Santos de Louga (1988-1989)</h4>
+                  <ul className="text-gray-700 text-sm space-y-1 pl-3 list-disc">
+                    <li><span className="font-semibold">Impact :</span> Création et structuration de clubs, impulsion de dynamiques collectives nouvelles.</li>
+                    <li><span className="font-semibold">Innovation :</span> Passage du statut de joueur à celui de dirigeant très jeune.</li>
+                    <li><span className="font-semibold">Jeunesse & Sport :</span> Engagement dans l’équipe senior et accompagnement de jeunes talents.</li>
+                  </ul>
+                </li>
+                <li className="bg-white rounded-3xl shadow-lg p-7 transition-transform hover:-translate-y-1 hover:shadow-2xl border border-green-100">
+                  <h4 className="text-lg font-semibold text-green-800 mb-2">Présidence de l’ASC Réveil de Bambey (1999-2009)</h4>
+                  <ul className="text-gray-700 text-sm space-y-1 pl-3 list-disc">
+                    <li><span className="font-semibold">Impact :</span> 10 ans de gestion, palmarès étoffé, club hissé au sommet régional.</li>
+                    <li><span className="font-semibold">Innovation :</span> Gestion financière rigoureuse et professionnalisation des pratiques.</li>
+                    <li><span className="font-semibold">Jeunesse & Sport :</span> Détection et accompagnement de jeunes joueurs locaux.</li>
+                  </ul>
+                </li>
+                <li className="bg-white rounded-3xl shadow-lg p-7 transition-transform hover:-translate-y-1 hover:shadow-2xl border border-green-100">
+                  <h4 className="text-lg font-semibold text-green-800 mb-2">Redressement de l’ASC Bambey (2010-2011)</h4>
+                  <ul className="text-gray-700 text-sm space-y-1 pl-3 list-disc">
+                    <li><span className="font-semibold">Impact :</span> Assainissement des finances, accession du club en division régionale.</li>
+                    <li><span className="font-semibold">Innovation :</span> Mobilisation de la population locale pour soutenir le club.</li>
+                    <li><span className="font-semibold">Jeunesse & Sport :</span> Relance de la formation des jeunes joueurs.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            {/* Projets en cours */}
+            <div>
+              <h3 className="text-base uppercase tracking-widest font-bold text-blue-700 mb-6 letter-spacing-wide">Projets en cours</h3>
+              <ul className="space-y-6">
+                <li className="bg-white rounded-3xl shadow-lg p-7 transition-transform hover:-translate-y-1 hover:shadow-2xl border border-blue-100">
+                  <h4 className="text-lg font-semibold text-blue-800 mb-2">Présidence de la Ligue de Football de Diourbel (depuis 2017)</h4>
+                  <ul className="text-gray-700 text-sm space-y-1 pl-3 list-disc">
+                    <li><span className="font-semibold">Impact :</span> Subventions, équipements professionnels, financements accrus, montée de plusieurs clubs en divisions supérieures.</li>
+                    <li><span className="font-semibold">Innovation :</span> Nouvelles méthodes de gestion et de développement local du football.</li>
+                    <li><span className="font-semibold">Jeunesse & Sport :</span> Soutien massif aux jeunes clubs et écoles de football.</li>
+                  </ul>
+                </li>
+                <li className="bg-white rounded-3xl shadow-lg p-7 transition-transform hover:-translate-y-1 hover:shadow-2xl border border-blue-100">
+                  <h4 className="text-lg font-semibold text-blue-800 mb-2">Engagement à la CAF & Fédération Sénégalaise de Football (2018-2022)</h4>
+                  <ul className="text-gray-700 text-sm space-y-1 pl-3 list-disc">
+                    <li><span className="font-semibold">Impact :</span> Représentation du Sénégal à la CAF, présidence de la commission des finances de la fédération.</li>
+                    <li><span className="font-semibold">Innovation :</span> Renforcement de la gouvernance et de la conformité financière.</li>
+                    <li><span className="font-semibold">Jeunesse & Sport :</span> Défense des intérêts des jeunes joueurs et clubs sénégalais à l’international.</li>
+                  </ul>
+                </li>
+                <li className="bg-white rounded-3xl shadow-lg p-7 transition-transform hover:-translate-y-1 hover:shadow-2xl border border-blue-100">
+                  <h4 className="text-lg font-semibold text-blue-800 mb-2">Baol Académie (depuis 2021)</h4>
+                  <ul className="text-gray-700 text-sm space-y-1 pl-3 list-disc">
+                    <li><span className="font-semibold">Impact :</span> Création d’une académie d’excellence, participation à un tournoi international U15 au Maroc.</li>
+                    <li><span className="font-semibold">Innovation :</span> Programme d’accompagnement sportif et éducatif sur-mesure.</li>
+                    <li><span className="font-semibold">Jeunesse & Sport :</span> Formation de jeunes talents et rayonnement régional.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            {/* Projets à venir */}
+            <div>
+              <h3 className="text-base uppercase tracking-widest font-bold text-orange-700 mb-6 letter-spacing-wide">Projets à venir</h3>
+              <ul className="space-y-6">
+                <li className="bg-white rounded-3xl shadow-lg p-7 transition-transform hover:-translate-y-1 hover:shadow-2xl border border-orange-100">
+                  <h4 className="text-lg font-semibold text-orange-800 mb-2">Rénovation des enceintes sportives régionales & siège de la Ligue</h4>
+                  <ul className="text-gray-700 text-sm space-y-1 pl-3 list-disc">
+                    <li><span className="font-semibold">Impact :</span> Modernisation des infrastructures, meilleure accessibilité pour tous.</li>
+                    <li><span className="font-semibold">Innovation :</span> Intégration de solutions éco-responsables et connectées.</li>
+                    <li><span className="font-semibold">Jeunesse & Sport :</span> Plus d’opportunités pour la jeunesse sportive locale.</li>
+                  </ul>
+                </li>
+                <li className="bg-white rounded-3xl shadow-lg p-7 transition-transform hover:-translate-y-1 hover:shadow-2xl border border-orange-100">
+                  <h4 className="text-lg font-semibold text-orange-800 mb-2">Structuration d’un club de dimension internationale</h4>
+                  <ul className="text-gray-700 text-sm space-y-1 pl-3 list-disc">
+                    <li><span className="font-semibold">Impact :</span> Ambition de hisser un club local au plus haut niveau africain.</li>
+                    <li><span className="font-semibold">Innovation :</span> Stratégie de développement et de gestion inspirée des grands clubs internationaux.</li>
+                    <li><span className="font-semibold">Jeunesse & Sport :</span> Tremplin pour les jeunes talents sénégalais vers l’élite.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Call to Action */}
-          <div className="space-y-8">
-            <div className="bg-white rounded-3xl p-8 shadow-xl">
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                  <Lightbulb className="w-6 h-6 text-green-600" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900">Votre Vision Compte</h3>
-              </div>
-              <p className="text-gray-700 leading-relaxed mb-6">
-                Votre avis est essentiel pour bâtir un football sénégalais plus fort et inclusif. Que vous soyez joueur, entraîneur, dirigeant de club ou passionné, vos idées et retours nous aident à identifier les besoins réels du terrain et à construire ensemble des solutions adaptées à chaque acteur du football national.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <Users className="w-5 h-5 text-green-600 mr-3" />
-                  <span className="text-gray-700">Clubs et associations sportives</span>
-                </div>
-                <div className="flex items-center">
-                  <Target className="w-5 h-5 text-green-600 mr-3" />
-                  <span className="text-gray-700">Entraîneurs et staff technique</span>
-                </div>
-                <div className="flex items-center">
-                  <Users className="w-5 h-5 text-green-600 mr-3" />
-                  <span className="text-gray-700">Joueurs et anciens internationaux</span>
-                </div>
-                <div className="flex items-center">
-                  <Target className="w-5 h-5 text-green-600 mr-3" />
-                  <span className="text-gray-700">Supporters et passionnés</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Collaboration Visual */}
-            <div className="bg-gradient-to-r from-green-600 to-blue-600 rounded-3xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Construisons Ensemble</h3>
-              <p className="text-lg leading-relaxed">
-                Ensemble, nous avons le pouvoir de transformer le football sénégalais. En unissant nos forces, nos idées et nos énergies, nous pouvons bâtir des projets innovants qui profiteront à toute la communauté, du terrain aux tribunes.
-              </p>
-              <div className="mt-6 flex items-center justify-center">
-                <div className="w-32 h-32 relative">
-                  <div className="absolute inset-0 bg-white/20 rounded-full animate-pulse"></div>
-                  <div className="absolute inset-4 bg-white/30 rounded-full animate-pulse delay-75"></div>
-                  <div className="absolute inset-8 bg-white/40 rounded-full animate-pulse delay-150"></div>
-                  <div className="absolute inset-12 bg-white rounded-full flex items-center justify-center">
-                    <Users className="w-8 h-8 text-green-600" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Form */}
-          <div className="bg-white rounded-3xl p-8 shadow-xl">
-            {isSubmitted ? (
-              <div className="text-center py-12">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Send className="w-8 h-8 text-green-600" />
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Merci pour votre contribution !
-                </h3>
-                <p className="text-gray-600">
-                  Votre idée est précieuse et sera étudiée avec attention. 
-                  Ensemble, nous bâtissons l'avenir du football sénégalais.
-                </p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                    Partagez votre Projet ou Idée
-                  </h3>
-                </div>
-
-                <div>
-                  <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-2">
-                    Titre de l'idée/projet *
-                  </label>
-                  <input
-                    type="text"
-                    id="title"
-                    name="title"
-                    required
-                    value={formData.title}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300"
-                    placeholder="Ex: Développement du football féminin en milieu rural"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-2">
-                    Description détaillée *
-                  </label>
-                  <textarea
-                    id="description"
-                    name="description"
-                    required
-                    rows={5}
-                    value={formData.description}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300 resize-none"
-                    placeholder="Décrivez votre idée, ses objectifs, et comment elle peut contribuer au développement du football sénégalais..."
-                  />
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                      Nom complet *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      required
-                      value={formData.name}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300"
-                      placeholder="Votre nom et prénom"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Adresse e-mail *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300"
-                      placeholder="votre@email.com"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                    Numéro de téléphone (facultatif)
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all duration-300"
-                    placeholder="+221 XX XXX XX XX"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full btn-primary flex items-center justify-center"
-                >
-                  <Send className="w-5 h-5 mr-2" />
-                  Envoyer ma Contribution
-                </button>
-              </form>
-            )}
-          </div>
         </div>
       </div>
     </section>

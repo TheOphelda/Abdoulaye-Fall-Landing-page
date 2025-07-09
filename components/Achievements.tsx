@@ -109,7 +109,8 @@ const Achievements = () => {
         </div>
 
         {/* Testimonials */}
-        <div>
+        
+        {/*<div>
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">
             Témoignages
           </h3>
@@ -127,7 +128,7 @@ const Achievements = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div>*/}   
       </div>
     </section>
   );

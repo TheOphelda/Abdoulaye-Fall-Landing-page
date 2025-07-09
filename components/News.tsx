@@ -56,6 +56,28 @@ const News = () => {
     { title: "Parrain de la finale de la ligue régionale de football de DIOURBEL", date: "27 JUILLET 2025" }
   ];
 
+  // Séparation événements à venir / passés
+  const moisFr: Record<string, string> = {
+    'JANVIER': '01', 'FÉVRIER': '02', 'FEVRIER': '02', 'MARS': '03', 'AVRIL': '04', 'MAI': '05', 'JUIN': '06', 'JUILLET': '07', 'AOÛT': '08', 'AOUT': '08', 'SEPTEMBRE': '09', 'OCTOBRE': '10', 'NOVEMBRE': '11', 'DÉCEMBRE': '12', 'DECEMBRE': '12'
+  };
+  function parseDateFr(dateStr: string): Date | null {
+    if (!dateStr) return null;
+    const parts = dateStr.trim().split(' ');
+    if (parts.length !== 3) return null;
+    const [day, mois, year] = parts;
+    const mm = moisFr[mois.toUpperCase()] || '01';
+    return new Date(`${year}-${mm}-${day.padStart(2, '0')}T00:00:00`);
+  }
+  const today = new Date('2025-07-08T12:27:43Z'); // Date du jour (UTC)
+  const eventsAVenir = upcomingEvents.filter(e => {
+    const d = parseDateFr(e.date);
+    return d && d >= today;
+  });
+  const eventsPasses = upcomingEvents.filter(e => {
+    const d = parseDateFr(e.date);
+    return d && d < today;
+  });
+
   return (
     <section id="actualites" className="section-padding bg-gray-50">
       <div className="max-w-7xl mx-auto">
@@ -125,11 +147,30 @@ const News = () => {
           {/* Upcoming Events */}
           <div className="bg-white rounded-2xl p-8 shadow-lg w-full">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Prochains Événements</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {upcomingEvents.map((event, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              {eventsAVenir.length === 0 && (
+                <div className="text-gray-500">Aucun événement à venir.</div>
+              )}
+              {eventsAVenir.map((event, index) => (
                 <div key={index} className="border-l-4 border-green-600 pl-6 py-4 bg-gray-50 rounded-xl shadow-sm">
                   <h4 className="font-semibold text-gray-900 mb-2">{event.title}</h4>
                   <div className="text-sm text-gray-600 flex items-center">
+                    <Calendar size={16} className="mr-2" />
+                    {event.date}
+                  </div>
+                </div>
+              ))}
+            </div>
+            {/* Événements passés */}
+            <h3 className="text-xl font-bold text-gray-700 mb-4 mt-8">Événements Passés</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 opacity-60">
+              {eventsPasses.length === 0 && (
+                <div className="text-gray-400">Aucun événement passé.</div>
+              )}
+              {eventsPasses.map((event, index) => (
+                <div key={index} className="border-l-4 border-gray-400 pl-6 py-4 bg-gray-100 rounded-xl shadow-sm">
+                  <h4 className="font-semibold text-gray-700 mb-2">{event.title}</h4>
+                  <div className="text-sm text-gray-500 flex items-center">
                     <Calendar size={16} className="mr-2" />
                     {event.date}
                   </div>

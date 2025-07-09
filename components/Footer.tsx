@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { SiTiktok, SiYoutube } from 'react-icons/si';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -21,10 +22,12 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: <Facebook size={20} />, href: '#', label: 'Facebook' },
-    { icon: <Twitter size={20} />, href: '#', label: 'Twitter/X' },
-    { icon: <Instagram size={20} />, href: '#', label: 'Instagram' },
-    { icon: <Linkedin size={20} />, href: '#', label: 'LinkedIn' }
+   { icon: <Facebook size={24} />, href: 'https://www.facebook.com/share/1Agdhw8otE/?mibextid=wwXIfr', label: 'Facebook' },
+       { icon: <SiTiktok size={24} />, href: 'https://www.tiktok.com/@abdoulayefall_officiel?_t=ZM-8xij4zWB165&_r=1', label: 'Tiktok' },
+       { icon: <Instagram size={24} />, href: 'https://www.instagram.com/abdoulayefall_officiel?igsh=MWVlOGRtanphZnhzMg==', label: 'Instagram' },
+       { icon: <Linkedin size={24} />, href: 'https://www.linkedin.com/in/abdoulaye-fall-75a709372?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app', label: 'LinkedIn' },
+       { icon: <SiYoutube size={24} />, href: 'https://www.youtube.com/@Abdoulayefallofficiel', label: 'YouTube' }
+    
   ];
 
   return (
@@ -34,9 +37,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 senegal-gradient rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">AF</span>
-              </div>
+            <img
+                src="/images/5a24bd0b-032c-40db-8f9f-331c4216641c.jpg"
+                alt="Abdoulaye Fall"
+                className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-md"
+              />
               <div>
                 <h3 className="text-xl font-bold">Abdoulaye Fall</h3>
                 <p className="text-gray-400">Candidat Président FSF</p>
@@ -96,23 +101,6 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="grid md:grid-cols-3 gap-6 text-sm">
-            <div className="flex items-center">
-              <Mail size={16} className="mr-2 text-green-500" />
-              <span className="text-gray-300">contact@abdoulayefall.sn</span>
-            </div>
-            <div className="flex items-center">
-              <Phone size={16} className="mr-2 text-green-500" />
-              <span className="text-gray-300">+221 XX XXX XX XX</span>
-            </div>
-            <div className="flex items-center">
-              <MapPin size={16} className="mr-2 text-green-500" />
-              <span className="text-gray-300">Dakar, Sénégal</span>
-            </div>
-          </div>
-        </div>
-
         {/* Bottom */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <p>
