@@ -74,7 +74,7 @@ const Biography = () => {
     <li><span className="font-semibold">2012 – 2014 :</span> Trésorier Payeur Régional de Diourbel</li>
     <li><span className="font-semibold">2014 – 2015 :</span> Fondé de pouvoir du Payeur Général du Trésor</li>
     <li><span className="font-semibold">2015 – 2020 :</span> Payeur Général du Trésor</li>
-    <li><span className="font-semibold">Depuis Juin 2020 :</span> Trésorier Général de l'Etat du Sénégal / Agent Comptable du Trésor</li>
+    <li><span className="font-semibold">2020 – 2025 :</span> Trésorier Général de l'Etat du Sénégal / Agent Comptable du Trésor</li>
   </ul>
 </div>
 
