@@ -56,7 +56,7 @@ const Achievements = () => {
             Réalisations
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+            Un parcours dédié au football et à la jeunesse sénégalaise.
           </p>
         </div>
 
