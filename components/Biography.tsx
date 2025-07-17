@@ -29,16 +29,25 @@ const Biography = () => {
   return (
     <section id="biographie" className="section-padding bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Parcours & Engagement
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Un parcours dédié au service du football et du développement du Sénégal
+            Un grand commis de l’État au service du football
+          </p>
+        </div>
+
+        {/* Introduction courte détachée */}
+        <div className="max-w-3xl mx-auto mb-12 bg-white/80 rounded-xl shadow p-6 text-center">
+          <h3 className="text-2xl font-bold text-indigo-700 mb-2">Un leader engagé pour le football sénégalais</h3>
+          <p className="text-gray-700 leading-relaxed text-lg">
+            Abdoulaye Fall, Inspecteur Principal du Trésor, s’est illustré par son engagement sans faille dans le développement du football au Sénégal. Son parcours unique allie expertise en gestion, passion du sport et leadership reconnu.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+
           {/* Portrait */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl">
@@ -53,59 +62,76 @@ const Biography = () => {
           </div>
 
           {/* Content */}
-          <div className="space-y-8 md:h-[600px] md:overflow-y-auto">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Débuts et Formation</h3>
-              <p className="text-gray-700 leading-relaxed">
-                Abdoulaye Fall a forgé son caractère et sa vision à travers un parcours riche et diversifié. 
-                Diplômé en gestion et management, il a très tôt développé une passion pour le leadership 
-                et l'organisation, qualités qui l'ont naturellement mené vers le monde du football.
-              </p>
-            </div>
+          <div className="flex flex-col gap-12 h-[600px] overflow-y-auto relative">
+  {/* Fade effect en bas si scroll */}
+  <div className="pointer-events-none absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-white to-transparent z-10" style={{display: 'none'}} id="bio-fade" />
 
-            <div>
-  <h3 className="text-2xl font-bold text-gray-900 mb-4">Parcours professionnel</h3>
-  <ul className="text-gray-700 leading-relaxed space-y-2 list-disc list-inside">
-    <li><span className="font-semibold">2003 – 2004 :</span> Fondé de pouvoir du Trésorier Payeur Régional de Louga</li>
-    <li><span className="font-semibold">2004 – 2006 :</span> Receveur Percepteur Municipal de Diourbel</li>
-    <li><span className="font-semibold">2006 – 2009 :</span> Receveur Percepteur Municipal de Ziguinchor</li>
-    <li><span className="font-semibold">2009 – 2011 :</span> Receveur Percepteur Municipal de Mbacké</li>
-    <li><span className="font-semibold">2011 – 2012 :</span> Trésorier Payeur Régional de Kolda</li>
-    <li><span className="font-semibold">2012 – 2014 :</span> Trésorier Payeur Régional de Diourbel</li>
-    <li><span className="font-semibold">2014 – 2015 :</span> Fondé de pouvoir du Payeur Général du Trésor</li>
-    <li><span className="font-semibold">2015 – 2020 :</span> Payeur Général du Trésor</li>
-    <li><span className="font-semibold">2020 – 2025 :</span> Trésorier Général de l'Etat du Sénégal / Agent Comptable du Trésor</li>
-  </ul>
+  {/* Réalisations sportives majeures */}
+  <div>
+    <h3 className="text-2xl font-bold text-indigo-700 mb-4">Réalisations sportives majeures</h3>
+    <div className="grid md:grid-cols-2 gap-6">
+  <div className="bg-gradient-to-br from-indigo-100 to-white rounded-xl shadow-lg p-4 border-l-8 border-indigo-600 transition-transform hover:scale-105 hover:shadow-2xl flex items-start gap-3">
+    <svg className="w-7 h-7 text-indigo-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path d="M12 17.75L18.2 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.44 4.73L5.8 21z"></path></svg>
+    <div>
+      <h4 className="font-bold text-base text-gray-900 mb-1">Président de l’ASC Réveil de Bambey</h4>
+      <p className="text-gray-700 text-sm">10 ans de présidence, plusieurs trophées remportés et structuration du club.</p>
+    </div>
+  </div>
+  <div className="bg-gradient-to-br from-green-100 to-white rounded-xl shadow-lg p-4 border-l-8 border-green-600 transition-transform hover:scale-105 hover:shadow-2xl flex items-start gap-3">
+    <svg className="w-7 h-7 text-green-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+    <div>
+      <h4 className="font-bold text-base text-gray-900 mb-1">Président de la Ligue de Football de Diourbel</h4>
+      <p className="text-gray-700 text-sm">Depuis 2017, mise en place de subventions, équipements professionnels et financements pour les clubs. Plusieurs équipes accèdent à des divisions supérieures.</p>
+    </div>
+  </div>
+  <div className="bg-gradient-to-br from-yellow-100 to-white rounded-xl shadow-lg p-4 border-l-8 border-yellow-500 transition-transform hover:scale-105 hover:shadow-2xl flex items-start gap-3">
+    <svg className="w-7 h-7 text-yellow-500" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+    <div>
+      <h4 className="font-bold text-base text-gray-900 mb-1">Création de Baol Académie</h4>
+      <p className="text-gray-700 text-sm">Lancement d’une académie d’excellence, participation à un tournoi international U15 au Maroc en 2023.</p>
+    </div>
+  </div>
+  <div className="bg-gradient-to-br from-blue-100 to-white rounded-xl shadow-lg p-4 border-l-8 border-blue-600 transition-transform hover:scale-105 hover:shadow-2xl flex items-start gap-3">
+    <svg className="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+    <div>
+      <h4 className="font-bold text-base text-gray-900 mb-1">Membre influent des instances nationales et africaines</h4>
+      <p className="text-gray-700 text-sm">Membre de la Fédération Sénégalaise de Football, de la CAF (commission audit et conformité), président de la commission des finances de la FSF (2021-2022).</p>
+    </div>
+  </div>
 </div>
+  </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Engagement et Parcours dans le Football</h3>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Personnage éminemment engagé, Monsieur Abdoulaye Fall se consacre depuis trois décennies au développement du football, notamment dans sa région d'origine de Diourbel. Dès sa seizième année en 1982, il accède à la présidence du comité culturel de l’ASC Penth de Bambey, tout en pratiquant le football en catégorie cadet dans deux clubs locaux.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Fort de l'obtention de son baccalauréat en 1988, il participe à la genèse de l’ASC Diwane, dont il intègre l’équipe senior. L'année suivante, il rejoint l’ASC Santos de Louga en qualité de dirigeant. Admis à l’ENA en 1999, il prend les rênes de l’ASC Réveil de Bambey durant dix ans, menant l'équipe à un palmarès fourni en trophées. Joueur passionné, il intègre par ailleurs l’équipe dominicale de Ziguinchor.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Nommé entre 2010 et 2011 Trésorier Payeur Général à Kolda, il reprend sur demande insistante de la population la présidence de l’ASC Bambey. Il assainit promptement les finances du club et le hisse en division régionale. Porté à la présidence de la Ligue de Football de Diourbel en 2017, Monsieur Fall met en œuvre trois objectifs cardinaux : subventionner les clubs, les doter d'équipements professionnels, et obtenir des financements conséquents. De multiples équipes accèdent alors à des divisions supérieures.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Tout en intégrant la Fédération Sénégalaise de Football, il rejoint la CAF en 2018 en qualité de membre de la commission d’audit et conformité. En 2021, il entre au COMEX de la Fédération Sénégalaise de Football et préside la commission des finances jusqu’à sa démission en juin 2022.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Réélu président de Ligue en 2021, ses nouvelles priorités sont la rénovation des enceintes sportives régionales, l'édification du siège de la Ligue, et la création d’une académie d'excellence. Cette dernière, Baol Académie, participera dès mars 2023 à un tournoi international U15 à Oulmès au Maroc.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Grâce à son engagement indéfectible et son attachement profond à son terroir, Monsieur Fall contribue largement à structurer et développer le football dans sa région et à l'échelle nationale. Il incarne l'avenir du football sénégalais. Ses qualités de stratège et de gestionnaire garantissent l'accomplissement des projets ambitieux qu'il initie. Monsieur Fall demeure sans conteste un atout majeur pour la concrétisation d'un club de dimension internationale auquel il aspire.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                Monsieur Fall est Inspecteur Principal du Trésor. Il est Chevalier de l’Ordre National du Lion et Médaillé d’Honneur de la Gendarmerie Nationale du Sénégal.
-              </p>
-            </div>
-          </div>
+
+</div>
         </div>
 
-        {/* Values Section */}
+        {/* Timeline & Distinctions en bas - version compacte accordéon */}
+        <div className="max-w-5xl mx-auto mt-12 flex flex-col gap-6">
+          {/* Accordéon Parcours */}
+          <div className="bg-white/90 rounded-xl shadow p-4">
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Parcours & Engagement</h3>
+            <ul className="flex flex-col gap-1">
+              <li className="flex text-sm text-gray-700"><span className="w-20 font-bold text-indigo-700">1982</span>Président du comité culturel de l’ASC Penth de Bambey et joueur cadet</li>
+              <li className="flex text-sm text-gray-700"><span className="w-20 font-bold text-indigo-700">1988</span>Création et joueur de l’ASC Diwane</li>
+              <li className="flex text-sm text-gray-700"><span className="w-20 font-bold text-indigo-700">1989</span>Dirigeant à l’ASC Santos de Louga</li>
+              <li className="flex text-sm text-gray-700"><span className="w-20 font-bold text-indigo-700">1999-2009</span>Président de l’ASC Réveil de Bambey, nombreux trophées</li>
+              <li className="flex text-sm text-gray-700"><span className="w-20 font-bold text-indigo-700">2010-2011</span>Président de l’ASC Bambey, montée en division régionale</li>
+              <li className="flex text-sm text-gray-700"><span className="w-20 font-bold text-indigo-700">2017</span>Président de la Ligue de Football de Diourbel</li>
+              <li className="flex text-sm text-gray-700"><span className="w-20 font-bold text-indigo-700">2018</span>Membre de la CAF (commission audit et conformité)</li>
+              <li className="flex text-sm text-gray-700"><span className="w-20 font-bold text-indigo-700">2021</span>Président commission finances FSF, réélu président de Ligue, lancement Baol Académie</li>
+              <li className="flex text-sm text-gray-700"><span className="w-20 font-bold text-indigo-700">2023</span>Participation de Baol Académie au tournoi international U15 au Maroc</li>
+            </ul>
+          </div>
+          {/* Distinctions compactes */}
+          <div className="bg-white/90 rounded-xl shadow p-4 flex flex-col sm:flex-row sm:items-center sm:gap-6">
+            <h3 className="text-base font-bold text-gray-900 mb-1 sm:mb-0">Distinctions :</h3>
+            <ul className="flex flex-wrap gap-3 text-xs text-gray-700 mb-0 list-none pl-0">
+              <li className="bg-indigo-50 px-2 py-1 rounded">Inspecteur Principal du Trésor</li>
+              <li className="bg-indigo-50 px-2 py-1 rounded">Chevalier de l’Ordre National du Lion</li>
+              <li className="bg-indigo-50 px-2 py-1 rounded">Médaillé d’Honneur de la Gendarmerie Nationale du Sénégal</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   );
