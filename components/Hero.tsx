@@ -74,7 +74,7 @@ const Hero = () => {
           )}
           {/* CTA Buttons dynamiques */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            {slides[currentSlide].ctas && slides[currentSlide].ctas.map((cta, idx) => (
+            {slides[currentSlide]?.ctas?.map((cta, idx) => (
               <Link key={idx} href={cta.href} className={`${cta.style} inline-flex items-center`}>
                 {cta.label}
                 {cta.icon}
